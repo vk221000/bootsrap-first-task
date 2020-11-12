@@ -28,8 +28,8 @@
     <div class="clearfix"></div>
     
     <section id="first-jumbo">
-        <div class="jumbotron text-center">
-            <div>
+        <div class="jumbotron text-center" id="jumbo">
+            <div >
                 <h2>Unleash Your Potential</h2>
                 <p lang="zxx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, 
                     temporibus, modi eius rerum blanditiis harum non error molestiae et ab dolore quia eveniet! 
@@ -39,6 +39,15 @@
             </div>
         </div>
     </section>
+    <script>
+            var arr=['man-smiling.jpg','working.jpg','teaching.jpeg'];
+            var k=arr.length;
+            function myTimer() {
+                var i=Math.floor(Math.random()*k);
+                document.getElementById("jumbo").style.backgroundImage=("linear-gradient( rgba(255, 0, 255, 0.3), rgba(255, 0, 255, 0.3)),url("+arr[i]+")");
+            }
+            window.setInterval(myTimer, 1800);
+    </script>
 
     <section id="about" class="container" >
         <div class="row">
